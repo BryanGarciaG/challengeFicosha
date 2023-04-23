@@ -43,7 +43,6 @@ mutantService.isMutant = async (DNA) => {
             }
 
         }
-        console.log(DNA[i])
         if (regexA.test(DNA[i]) || regexT.test(DNA[i]) || regexC.test(DNA[i]) || regexG.test(DNA[i])) {
             contMutantPattern++;
         }
@@ -52,7 +51,6 @@ mutantService.isMutant = async (DNA) => {
             contMutantPattern++;
         }
     }
-    console.log(contMutantPattern)
     return contMutantPattern > 1;
 }
 
