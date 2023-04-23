@@ -40,7 +40,6 @@ class Server {
     middlewares() {
         this.app.use('/', mutantRouter);
         this.app.use("/documentation", swaggerUI.serve, swaggerUI.setup(swaggerJsDoc(swagger)));
-
     }
 
     listen() {

@@ -5,7 +5,7 @@ mutantService.validateDNA = async (DNA) => {
     const regex = /^[ATCG]+$/g
 
     const isValid = DNA.every(dnaSeries => {
-        return (dnaSeries.match(regex) && dnaSeries.length == DNA.length);//quizas tambien validar que sea una matriz de iguales lados
+        return (dnaSeries.match(regex) && dnaSeries.length == DNA.length);
     });
 
     return isValid;
