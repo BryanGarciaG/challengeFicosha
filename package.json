@@ -4,7 +4,7 @@
   "description": "API Challenge Ficosha",
   "main": "src/app.js",
   "scripts": {
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
