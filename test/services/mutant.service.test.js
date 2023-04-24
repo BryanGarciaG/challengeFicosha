@@ -1,4 +1,4 @@
-const mutantService = require('../src/services/mutant.service');
+const mutantService = require('../../src/services/mutant.service');
 const request = require('supertest');
 
 describe('validate the DNA sequence', () => {
