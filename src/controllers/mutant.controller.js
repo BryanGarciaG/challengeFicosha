@@ -1,13 +1,8 @@
 const mutantService = require('./../services/mutant.service');
-const { validationResult } = require('express-validator');
 const mutantController = {};
 
 mutantController.checkMutant = async (req, res) => {
     try {
-        const bodyErrors = validationResult(req);
-        // if(!bodyErrors.isEmpty()){
-        //     return res.status(400).send(bodyErrors.array()[0].msg);
-        // }
         const {
             dna
         } = req.body;
