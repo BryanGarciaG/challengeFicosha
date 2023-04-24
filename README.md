@@ -65,7 +65,7 @@ Evalua si el array de entrada corresponde a una sequencia de ADN valida, si no e
 #### Estadisticas de revision
 
 ```http
-  GET /api/stats/
+  GET /stats/
 ```
 Devuelve un objeto con la cantidad de humanos evaluados, cuantos son mutantes y el ratio.
 
